@@ -17,7 +17,7 @@ const App: React.FC = () => {
     { 
       name: 'Snapchat', 
       url: 'https://www.snapchat.com/add/misho_64', 
-      icon: 'M11.993 1.55c-2.527 0-4.195 1.826-4.195 4.385 0 1.09.333 2.203.864 3.031.115.188.156.406.104.615l-.312 1.187c-.063.24-.344.333-.531.177l-1.521-1.26c-.7-.584-1.698-.459-2.239.292-.448.615-.354 1.469.229 1.958l1.469 1.229c.26.219.375.562.281.896l-.521 1.885c-.135.5.25.969.76.969h1.417c.344 0 .635.229.719.562l.448 1.906c.125.52.792.646 1.104.208l1.031-1.448c.2-.281.521-.458.865-.458h.062c.344 0 .667.177.865.458l1.031 1.448c.312.438.979.312 1.104-.208l.448-1.906c.084-.333.375-.562.719-.562h1.417c.51 0 .896-.469.76-.969l-.521-1.885c-.094-.334.021-.677.281-.896l1.469-1.229c.583-.489.677-1.343.229-1.958-.541-.751-1.539-.876-2.239-.292l-1.521 1.26c-.187.156-.468.063-.531-.177l-.312-1.187c-.052-.209.01-.427.104-.615.531-.828.864-1.941.864-3.031 0-2.559-1.668-4.385-4.195-4.385z' 
+      icon: 'M12 2.25c-2.203 0-3.882 1.631-4.045 4.156-.035.534.12 1.206.518 1.69.256.313.385.696.353 1.085l-.176.711c-.05.198-.27.284-.423.167l-1.34-1.018c-.611-.464-1.458-.363-1.928.225-.39.492-.308 1.173.18 1.564l1.246 1c.219.175.322.45.25.717l-.42 1.508c-.11.396.195.775.603.775h1.25c.306 0 .56.195.63.468l.38 1.5c.092.368.618.47.857.172l.812-1.026c.168-.212.43-.338.71-.338h.04c.28 0 .542.126.71.338l.812 1.026c.239.298.765.196.857-.172l.38-1.5c.07-.273.324-.468.63-.468h1.25c.408 0 .713-.379.603-.775l-.42-1.508c-.072-.267.031-.542.25-.717l1.246-1c.488-.391.57-1.072.18-1.564-.47-.588-1.317-.689-1.928-.225l-1.34 1.018c-.153.117-.373.031-.423-.167l-.176-.711c-.032-.389.097-.772.353-1.085.398-.484.553-1.156.518-1.69-.163-2.525-1.842-4.156-4.045-4.156z' 
     },
     { 
       name: 'Instagram', 
@@ -27,7 +27,7 @@ const App: React.FC = () => {
     { 
       name: 'TikTok', 
       url: 'https://www.tiktok.com/@misho_64', 
-      icon: 'M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1 .05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1.04-.1z' 
+      icon: 'M12.525.491v3.308c1.342 0 2.51.552 3.327 1.456.124.138.238.286.342.441a7.458 7.458 0 011.025 2.11c.142.505.219 1.033.219 1.579v.21c0 3.866-3.134 7-7 7a6.974 6.974 0 01-4.95-2.05A6.974 6.974 0 013.5 9.5c0-3.866 3.134-7 7-7v3.308c-2.039 0-3.692 1.653-3.692 3.692 0 2.039 1.653 3.692 3.692 3.692 2.039 0 3.692-1.653 3.692-3.692V.491h2.333c0 2.51 2.035 4.545 4.545 4.545v2.333a6.853 6.853 0 01-3.692-1.076V.491h-4.875z' 
     },
     { 
       name: 'Telegram', 
@@ -37,67 +37,59 @@ const App: React.FC = () => {
   ];
 
   return (
-    <div className="min-h-screen pb-32">
+    <div className="min-h-screen pb-40">
       {/* Hero Section */}
-      <section className="pt-20 px-6 flex flex-col items-center text-center">
-        <div className="w-32 h-32 rounded-full gradient-bg p-1 mb-8 shadow-2xl shadow-purple-500/20">
-          <div className="w-full h-full rounded-full bg-slate-900 flex items-center justify-center overflow-hidden">
-             <span className="text-4xl font-black gradient-text">L</span>
+      <section className="pt-24 px-6 flex flex-col items-center text-center">
+        <div className="w-28 h-28 rounded-[2rem] gradient-bg p-1 mb-8 shadow-2xl shadow-purple-500/20 rotate-3 transition-transform hover:rotate-0">
+          <div className="w-full h-full rounded-[1.8rem] bg-[#0a0a0c] flex items-center justify-center overflow-hidden">
+             <span className="text-4xl font-black gradient-text">M</span>
           </div>
         </div>
-        <h1 className="text-4xl md:text-6xl font-black mb-4">أهلاً بك في <span className="gradient-text">عالمي</span></h1>
-        <p className="text-slate-400 text-lg max-w-md leading-relaxed">مطور واجهات ومصمم تجارب مستخدم شغوف بالتكنولوجيا والإبداع.</p>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-12 w-full max-w-2xl">
-          <div className="glass p-6 rounded-3xl hover:bg-white/10 transition-colors cursor-pointer group">
-            <h3 className="text-xl font-bold mb-2 group-hover:text-pink-400">مشاريعي</h3>
-            <p className="text-sm text-slate-400">تصفح أحدث أعمالي في تطوير الويب.</p>
-          </div>
-          <div className="glass p-6 rounded-3xl hover:bg-white/10 transition-colors cursor-pointer group">
-            <h3 className="text-xl font-bold mb-2 group-hover:text-purple-400">مدونتي</h3>
-            <p className="text-sm text-slate-400">أشارككم أفكاري وخبراتي التقنية.</p>
-          </div>
-        </div>
+        <h1 className="text-5xl md:text-7xl font-black mb-6 tracking-tight">مرحبا، أنا <span className="gradient-text">ميشو</span></h1>
+        <p className="text-slate-400 text-lg max-w-lg leading-relaxed font-medium">مطور واجهات ومصمم تجارب مستخدم. هنا تجد كل حساباتي الرسمية.</p>
       </section>
 
       {/* Social Accounts Section */}
-      <section className="mt-20 px-6 max-w-4xl mx-auto">
-        <h2 className="text-3xl font-black mb-12 text-center gradient-text">حساباتي</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <section className="mt-20 px-6 max-w-2xl mx-auto">
+        <h2 className="text-2xl font-black mb-10 text-center text-white/50 tracking-[0.2em] uppercase">حساباتي الشخصية</h2>
+        <div className="grid grid-cols-1 gap-4">
           {socialLinks.map((social) => (
             <a 
               key={social.name} 
               href={social.url} 
               target="_blank" 
               rel="noopener noreferrer"
-              className="glass p-5 rounded-3xl flex items-center justify-between gap-4 hover:scale-105 transition-all group hover:border-pink-500/30"
+              className="glass p-6 rounded-[2rem] flex items-center justify-between group hover:bg-white/5 transition-all active:scale-[0.98]"
             >
-              <div className="text-right flex-1">
-                <span className="font-bold text-slate-200 group-hover:text-white transition-colors">{social.name}</span>
+              <div className="flex items-center gap-6">
+                <div className="w-14 h-14 rounded-2xl gradient-bg flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform">
+                  <svg className="w-7 h-7 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d={social.icon} />
+                  </svg>
+                </div>
+                <span className="font-bold text-xl text-slate-200 group-hover:text-white transition-colors">{social.name}</span>
               </div>
-              <div className="w-12 h-12 rounded-2xl gradient-bg flex items-center justify-center text-white shadow-lg group-hover:shadow-pink-500/20">
-                <svg className="w-6 h-6 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                  <path d={social.icon} />
-                </svg>
-              </div>
+              <svg className="w-6 h-6 text-slate-600 group-hover:text-pink-500 transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+              </svg>
             </a>
           ))}
         </div>
       </section>
 
       {/* Floating Bottom Navigation */}
-      <nav className="floating-nav glass px-8 py-4 rounded-full flex items-center gap-12 shadow-2xl shadow-purple-900/40">
-        <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="text-white hover:text-purple-400 transition-colors">
+      <nav className="floating-nav glass px-10 py-5 rounded-full flex items-center gap-14 shadow-2xl shadow-black/50">
+        <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="text-white hover:text-purple-400 transition-all hover:scale-125">
           <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
           </svg>
         </button>
-        <button onClick={() => toggleModal('search')} className="text-white hover:text-pink-400 transition-colors">
+        <button onClick={() => toggleModal('search')} className="text-white hover:text-pink-400 transition-all hover:scale-125">
           <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
           </svg>
         </button>
-        <button onClick={() => toggleModal('contact')} className="text-white hover:text-purple-400 transition-colors">
+        <button onClick={() => toggleModal('contact')} className="text-white hover:text-purple-400 transition-all hover:scale-125">
           <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
           </svg>
@@ -109,21 +101,21 @@ const App: React.FC = () => {
         <div className="fixed inset-0 z-[100] flex items-center justify-center p-4">
           <div className="absolute inset-0 overlay" onClick={() => toggleModal(null)}></div>
           <div className="glass w-full max-w-md p-8 rounded-[2.5rem] modal-enter relative z-10 shadow-2xl">
-            <div className="flex items-center gap-4 bg-white/5 border border-white/10 p-4 rounded-2xl mb-6">
-              <svg className="w-6 h-6 text-pink-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-              </svg>
+            <div className="flex items-center gap-4 bg-white/5 border border-white/10 p-5 rounded-2xl mb-6">
               <input 
                 autoFocus 
                 type="text" 
-                placeholder="ابحث عن مشاريع أو مقالات..." 
-                className="bg-transparent border-none outline-none flex-1 text-white placeholder:text-slate-500 text-lg" 
+                placeholder="ما الذي تبحث عنه؟" 
+                className="bg-transparent border-none outline-none flex-1 text-white placeholder:text-slate-500 text-xl font-bold" 
               />
+              <svg className="w-6 h-6 text-pink-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
             </div>
             <div className="space-y-3">
-              <p className="text-xs font-bold text-slate-500 uppercase tracking-widest px-2 text-right">اقتراحات</p>
-              {['تطوير تطبيقات الموبايل', 'تصميم الهوية البصرية', 'دروس ReactJS'].map(item => (
-                <div key={item} className="p-3 hover:bg-white/5 rounded-xl cursor-pointer text-slate-300 transition-colors text-right">
+              <p className="text-xs font-bold text-slate-500 uppercase tracking-widest px-2 text-right">أكثر بحثاً</p>
+              {['المشاريع الجديدة', 'دروس البرمجة', 'السيرة الذاتية'].map(item => (
+                <div key={item} className="p-4 hover:bg-white/5 rounded-2xl cursor-pointer text-slate-300 transition-colors text-right font-bold">
                   {item}
                 </div>
               ))}
@@ -136,49 +128,39 @@ const App: React.FC = () => {
       {activeModal === 'contact' && (
         <div className="fixed inset-0 z-[100] flex items-center justify-center p-4">
           <div className="absolute inset-0 overlay" onClick={() => toggleModal(null)}></div>
-          <div className="glass w-full max-w-md p-10 rounded-[2.5rem] modal-enter relative z-10 shadow-2xl text-center">
-            <div className="w-20 h-20 gradient-bg rounded-3xl flex items-center justify-center mx-auto mb-8 shadow-xl">
+          <div className="glass w-full max-w-md p-10 rounded-[3rem] modal-enter relative z-10 shadow-2xl text-center">
+            <div className="w-20 h-20 gradient-bg rounded-[2rem] flex items-center justify-center mx-auto mb-10 shadow-xl rotate-6">
               <svg className="w-10 h-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
               </svg>
             </div>
             
-            <h2 className="text-3xl font-black mb-8">تواصل معي</h2>
+            <h2 className="text-4xl font-black mb-10 gradient-text">تواصل معي</h2>
             
-            <div className="space-y-6">
-              <a href="tel:01555" className="flex items-center gap-5 p-4 rounded-2xl bg-white/5 border border-white/10 hover:border-purple-500/50 transition-all group">
-                <div className="w-12 h-12 rounded-xl bg-purple-500/20 flex items-center justify-center text-purple-400">
-                   <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+            <div className="space-y-4">
+              <a href="mailto:lited@gmail.com" className="flex items-center gap-6 p-5 rounded-3xl bg-white/5 border border-white/5 hover:border-pink-500/50 transition-all group">
+                <div className="w-14 h-14 rounded-2xl bg-pink-500/10 flex items-center justify-center text-pink-400">
+                   <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
                 </div>
                 <div className="text-right">
-                  <p className="text-xs text-slate-500 font-bold uppercase">الهاتف</p>
-                  <p className="text-xl font-bold group-hover:text-purple-400">01555</p>
+                  <p className="text-xs text-slate-500 font-bold mb-1">البريد الإلكتروني</p>
+                  <p className="text-lg font-bold group-hover:text-pink-400 transition-colors">lited@gmail.com</p>
                 </div>
               </a>
 
-              <a href="mailto:lited@gmail.com" className="flex items-center gap-5 p-4 rounded-2xl bg-white/5 border border-white/10 hover:border-pink-500/50 transition-all group">
-                <div className="w-12 h-12 rounded-xl bg-pink-500/20 flex items-center justify-center text-pink-400">
-                   <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+              <div className="flex items-center gap-6 p-5 rounded-3xl bg-white/5 border border-white/5">
+                <div className="w-14 h-14 rounded-2xl bg-blue-500/10 flex items-center justify-center text-blue-400">
+                   <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
                 </div>
                 <div className="text-right">
-                  <p className="text-xs text-slate-500 font-bold uppercase">البريد الإلكتروني</p>
-                  <p className="text-lg font-bold group-hover:text-pink-400">lited@gmail.com</p>
-                </div>
-              </a>
-
-              <div className="flex items-center gap-5 p-4 rounded-2xl bg-white/5 border border-white/10">
-                <div className="w-12 h-12 rounded-xl bg-blue-500/20 flex items-center justify-center text-blue-400">
-                   <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
-                </div>
-                <div className="text-right">
-                  <p className="text-xs text-slate-500 font-bold uppercase">الموقع</p>
-                  <p className="text-md font-bold">مصر، القاهرة، وسط البلد</p>
+                  <p className="text-xs text-slate-500 font-bold mb-1">الموقع الجغرافي</p>
+                  <p className="text-lg font-bold">القاهرة، مصر</p>
                 </div>
               </div>
             </div>
 
-            <button onClick={() => toggleModal(null)} className="mt-10 text-slate-500 hover:text-white transition-colors font-bold text-sm">
-              إغلاق النافذة
+            <button onClick={() => toggleModal(null)} className="mt-12 text-slate-500 hover:text-white transition-colors font-black text-sm uppercase tracking-widest">
+              إغلاق
             </button>
           </div>
         </div>
